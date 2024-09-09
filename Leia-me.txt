@@ -1,0 +1,15 @@
+Olá, esse simples jogo tem como objetivo analisar a logica!
+
+Jogo final de semana é um Jogo do qual se deve jogar em dias específicos(sábado ou domingo) 
+Caso jogo seja executado na semana, você será notificado com uma mensagem te desejando boa semana!
+
+Vamos as perguntas:
+
+- Qual objetivo do jogo?
+R: esse jogo é unicamente desenvolvido para mostrar a logica  usado por trás desse simples jogo na linguagens HTML, CSS, JavaScript e JAVA.
+
+- Para quem é esse jogo:
+R: Esse jogo é para mostrar meus conhecimentos a contratantes e profissionais do mercado de tecnologia mostrando de forma clara e evidente que tenho noção para estar ingressando na área!
+
+- Qual nível do trabalho:
+R: Nivel Junior    

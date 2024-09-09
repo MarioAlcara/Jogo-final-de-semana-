@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo: Final de Semana</title>
+  <link rel="stylesheet" href="image.css">
+  <script>
+    window.onload = function() {
+      iniciarJogo();
+
+      // Função para recarregar a página quando o botão for clicado
+      document.getElementById('botaoRefazer').onclick = function() {
+        location.reload(); // Recarrega a página para iniciar o jogo novamente
+      };
+    };
+
+    function iniciarJogo() {
+      alert('Bem-vindo ao jogo final de semana!!');
+      
+      let hoje = new Date(); //data de hoje que liga com os  (import java.time.LocalDate; e import java.time.DayOfWeek;)
+      let diaSemana = hoje.getDay(); // 0 para domingo, 1 para segunda, etc.
+
+      let nomeDia;
+
+      if (diaSemana === 6) {
+        nomeDia = 'Sábado';
+      } else if (diaSemana === 0) {
+        nomeDia = 'Domingo';
+      } else {
+        nomeDia = ''; // Nenhum dos dois
+      }
+
+      let chute = prompt('Escolha um dia: Sábado ou Domingo');
+
+      if (nomeDia !== '' && chute === nomeDia) {
+        document.body.classList.add('acerto'); // Adiciona a classe de acerto
+        alert(`Isso mesmo, bom fim de semana! ${nomeDia}`);
+      } else if (nomeDia === '') {
+        document.body.classList.add('diaComum'); // Adiciona a classe de dia comum
+        alert('Hoje não é Sabado ou Domingo. Boa Semana!');
+      } else {
+        document.body.classList.add('erro'); // Adiciona a classe de erro
+        alert(`Errado! O dia era: ${nomeDia}`);
+      }
+    }
+  </script>
+</head>
+<body>
+  <button id="botaoRefazer">Refazer</button>
+</body>
+</html>

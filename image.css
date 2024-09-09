@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    transition: background-image 0.5s ease;
+    height: 100vh; /* Garante que o body cubra a altura da janela */
+    margin: 0; /* Remove margens padrão do body */
+  }
+  
+  .acerto {
+    background-image: url('imagens/alegria.webp'); /* Caminho correto para a imagem de acerto */
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  .erro {
+    background-image: url('imagens/triste.webp'); /* Caminho correto para a imagem de erro */
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  .diaComum {
+    background-image: url('imagens/menina\ pensativa.avif'); /* Caminho correto para a imagem de dias comuns */
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  #botaoRefazer {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #botaoRefazer:hover {
+    background-color: #0056b3;
+  }
+  
